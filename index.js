@@ -31,11 +31,11 @@ db.mongoose
         process.exit();
     });
 
-app.get("/", (req, res) => {
-    res.json({
-        message: "Welcome to the REST API"
-    });
-});
+// app.get("/", (req, res) => {
+//     res.json({
+//         message: "Welcome to the REST API"
+//     });
+// });
 
 const router = require("./routes/api.js");
 app.use("/api", router);
