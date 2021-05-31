@@ -20,4 +20,10 @@ router.delete("/notes/:id", (req, res, next) => {
         .catch(next)
 });
 
+// router.patch("/notes/:id", (req, res, next) => {
+//     Note.findOneAndUpdate({"_id": req.params.id}, {$set: {title: req.body.title, content: req.body.content}}, (err) => {
+//         console.log(err);
+//     });
+// });
+
 module.exports = router;

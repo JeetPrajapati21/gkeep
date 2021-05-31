@@ -11,16 +11,13 @@ const App = () => {
   const addNote = (note) => {
     axios.post("/api/notes", note)
       .catch(err => console.log(err));
-
-    // setNotes((prevNote) => {
-    //   return [...prevNote, note];
-    // });
   };
 
   const deleteNote = (id) => {
     axios.delete(`/api/notes/${id}`)
       .catch(err => console.log(err));
   };
+
 
   axios.get("/api/notes")
     .then(response => {
